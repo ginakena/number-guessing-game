@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FBDB93;
+  font-family: "Libertinus Mono", monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  text-align: center;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  gap: 3.8rem;
+}
+
+.game-instruction {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.new-game {
+  padding: 0.8rem 2rem;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.new-game:hover {
+  background-color: #444;
+}
+
+.new-game:disabled { 
+  cursor: not-allowed;
+}
+
+.game-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.trials {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 1.5rem;
+}
+
+.input-box {
+  font-size: 3rem;
+  padding: 0.5rem;
+  width: 150px;
+  text-align: center;
+  border: 3px solid #000;
+  margin-bottom: 1rem;
+  font-family: inherit;
+}
+
+.feedback {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 2rem 0;
+  min-height: 2rem;
+}
+
+button[type="submit"] {
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 150px;
+}
+
+button[type="submit"]:hover {
+  background-color: #444;
+}
+
+button[type="submit"]:disabled {  
+  cursor: not-allowed;
+}
