@@ -103,6 +103,7 @@ function Game() {
         <input
           type="number"
           className="input-box"
+          placeholder='00'
           value={state.guess}
           onChange={(e) => dispatch({ type: 'Secret_Number', payload: e.target.value })}
           disabled={state.gameOver}
